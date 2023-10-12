@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"testing"
 
+	"github.com/baiweiguo/gohbase/hrpc"
+	"github.com/baiweiguo/gohbase/region"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
-	"github.com/tsuna/gohbase/hrpc"
-	"github.com/tsuna/gohbase/region"
 )
 
 func TestDebugStateSanity(t *testing.T) {

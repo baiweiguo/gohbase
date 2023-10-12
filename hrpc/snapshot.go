@@ -9,7 +9,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/tsuna/gohbase/pb"
+	"github.com/baiweiguo/gohbase/pb"
 	"google.golang.org/protobuf/proto"
 )
 

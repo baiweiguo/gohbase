@@ -11,8 +11,8 @@ import (
 	"io"
 	"sync"
 
+	"github.com/baiweiguo/gohbase/hrpc"
 	log "github.com/sirupsen/logrus"
-	"github.com/tsuna/gohbase/hrpc"
 	"modernc.org/b/v2"
 )
 

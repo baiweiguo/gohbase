@@ -11,11 +11,11 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/baiweiguo/gohbase/hrpc"
+	"github.com/baiweiguo/gohbase/pb"
+	"github.com/baiweiguo/gohbase/region"
+	"github.com/baiweiguo/gohbase/zk"
 	log "github.com/sirupsen/logrus"
-	"github.com/tsuna/gohbase/hrpc"
-	"github.com/tsuna/gohbase/pb"
-	"github.com/tsuna/gohbase/region"
-	"github.com/tsuna/gohbase/zk"
 )
 
 const (

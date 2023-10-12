@@ -13,10 +13,10 @@ import (
 	"strconv"
 	"testing"
 
+	"github.com/baiweiguo/gohbase/hrpc"
+	"github.com/baiweiguo/gohbase/region"
+	mockRegion "github.com/baiweiguo/gohbase/test/mock/region"
 	"github.com/golang/mock/gomock"
-	"github.com/tsuna/gohbase/hrpc"
-	"github.com/tsuna/gohbase/region"
-	mockRegion "github.com/tsuna/gohbase/test/mock/region"
 )
 
 func TestMetaCache(t *testing.T) {

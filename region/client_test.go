@@ -22,12 +22,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/baiweiguo/gohbase/hrpc"
+	"github.com/baiweiguo/gohbase/pb"
+	"github.com/baiweiguo/gohbase/test"
+	"github.com/baiweiguo/gohbase/test/mock"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
-	"github.com/tsuna/gohbase/hrpc"
-	"github.com/tsuna/gohbase/pb"
-	"github.com/tsuna/gohbase/test"
-	"github.com/tsuna/gohbase/test/mock"
 	"google.golang.org/protobuf/encoding/protowire"
 	"google.golang.org/protobuf/proto"
 )

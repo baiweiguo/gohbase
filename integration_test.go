@@ -27,13 +27,13 @@ import (
 
 	"math"
 
+	"github.com/baiweiguo/gohbase"
+	"github.com/baiweiguo/gohbase/filter"
+	"github.com/baiweiguo/gohbase/hrpc"
+	"github.com/baiweiguo/gohbase/pb"
+	"github.com/baiweiguo/gohbase/region"
 	log "github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
-	"github.com/tsuna/gohbase"
-	"github.com/tsuna/gohbase/filter"
-	"github.com/tsuna/gohbase/hrpc"
-	"github.com/tsuna/gohbase/pb"
-	"github.com/tsuna/gohbase/region"
 	"google.golang.org/protobuf/proto"
 )
 

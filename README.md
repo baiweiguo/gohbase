@@ -1,4 +1,4 @@
-# Golang HBase client [![CI](https://github.com/tsuna/gohbase/actions/workflows/ci.yml/badge.svg)](https://github.com/tsuna/gohbase/actions/workflows/ci.yml) [![codecov.io](http://codecov.io/github/tsuna/gohbase/coverage.svg?branch=master)](http://codecov.io/github/tsuna/gohbase?branch=master) [![GoDoc](https://godoc.org/github.com/tsuna/gohbase?status.png)](https://godoc.org/github.com/tsuna/gohbase)
+# Golang HBase client [![CI](https://github.com/baiweiguo/gohbase/actions/workflows/ci.yml/badge.svg)](https://github.com/baiweiguo/gohbase/actions/workflows/ci.yml) [![codecov.io](http://codecov.io/github/tsuna/gohbase/coverage.svg?branch=master)](http://codecov.io/github/tsuna/gohbase?branch=master) [![GoDoc](https://godoc.org/github.com/baiweiguo/gohbase?status.png)](https://godoc.org/github.com/baiweiguo/gohbase)
 
 This is a pure [Go](http://golang.org/) client for [HBase](http://hbase.org).
 
@@ -10,7 +10,7 @@ HBase >= 1.0
 
 ## Installation
 
-    go get github.com/tsuna/gohbase
+    go get github.com/baiweiguo/gohbase
 
 ## Example Usage
 
