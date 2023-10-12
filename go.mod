@@ -1,4 +1,4 @@
-module github.com/tsuna/gohbase
+module github.com/baiweiguo/gohbase
 
 go 1.18
 
