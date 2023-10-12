@@ -9,6 +9,10 @@ import (
 func NewCreateNamespace(ctx context.Context, namespace string,
 	options ...func(createNamespace *CreateNamespace)) *CreateNamespace {
 	return &CreateNamespace{
+		base: base{
+			ctx:      ctx,
+			resultch: make(chan RPCResult, 1),
+		},
 		name: namespace,
 	}
 }
