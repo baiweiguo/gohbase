@@ -113,13 +113,15 @@ func (ct *CreateTable) ToProto() proto.Message {
 		}
 		pbFamilies = append(pbFamilies, f)
 	}
-
+	namespace, table := ct.parseTableName()
 	return &pb.CreateTableRequest{
 		TableSchema: &pb.TableSchema{
 			TableName: &pb.TableName{
 				// TODO: handle namespaces
-				Namespace: []byte("default"),
-				Qualifier: ct.table,
+				// Namespace: []byte("default"),
+				// Qualifier: ct.table,
+				Namespace: []byte(namespace),
+				Qualifier: table,
 			},
 			Attributes:     pbAttributes,
 			ColumnFamilies: pbFamilies,

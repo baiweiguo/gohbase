@@ -40,6 +40,7 @@ type AdminClient interface {
 	SetBalancer(sb *hrpc.SetBalancer) (bool, error)
 	// MoveRegion moves a region to a different RegionServer
 	MoveRegion(mr *hrpc.MoveRegion) error
+	CreateNamespace(t *hrpc.CreateNamespace) error
 }
 
 // NewAdminClient creates an admin HBase client.
@@ -98,6 +99,20 @@ func (c *client) CreateTable(t *hrpc.CreateTable) error {
 	}
 
 	return c.checkProcedureWithBackoff(t.Context(), r.GetProcId())
+}
+
+func (c *client) CreateNamespace(t *hrpc.CreateNamespace) error {
+	pbmsg, err := c.SendRPC(t)
+	if err != nil {
+		return err
+	}
+
+	_, ok := pbmsg.(*pb.CreateNamespaceResponse)
+	if !ok {
+		return fmt.Errorf("sendRPC returned not a CreateTableResponse")
+	}
+
+	return nil
 }
 
 func (c *client) DeleteTable(t *hrpc.DeleteTable) error {
